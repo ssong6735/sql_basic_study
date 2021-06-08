@@ -134,8 +134,13 @@ CREATE TABLE nuri_note(
 COMMIT;
 
 
-SELECT * FROM nuri_channel;
 SELECT * FROM nuri_user;
+
+SELECT * FROM nuri_channel;
+
+SELECT * FROM nuri_channel_join_user;
+
+
 
 INSERT INTO nuri_channel
         (channel_no, channel_name, channel_info, admin_user_no, channel_pw)
