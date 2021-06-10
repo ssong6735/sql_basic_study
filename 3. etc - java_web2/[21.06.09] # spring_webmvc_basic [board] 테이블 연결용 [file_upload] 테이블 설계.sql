@@ -23,7 +23,16 @@ seq_board.nextval, seq_board.currval
 FROM board;
 
 
+SELECT * FROM file_upload
+WHERE board_no=392;
+
+ALTER TABLE board
+ADD reg_date DATE DEFAULT SYSDATE;
+
 
 SELECT * FROM file_upload;
+
+SELECT * FROM board ORDER BY board_no DESC;
+
 
 
